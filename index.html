@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For You</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="intro" onclick="openLetter()">
+    <h1>Hi Faye 🌷</h1>
+    <p>I just want to greet you a Happy Valentine’s Day,</p>
+    <p>and I hope you read this message full-heartedly,</p>
+    <p>since it’s what I genuinely feel.</p>
+    <p style="margin-top:20px; font-size:14px;">Click to open</p>
+</div>
+
+<div class="container" id="letterContainer">
+    <div class="letter">
+
+        <p>Hi Faye🌷</p>
+
+        <p>I've been thinking a lot lately, and I wanted to be honest with you.</p>
+
+        <p>I know I moved a bit too fast before. I let my feelings take over, and I get that it changed the pace of things. I'm sorry if it made anything feel overwhelming.</p>
+
+        <p>I really miss how easy it felt when we talked. I miss the excitement, the random conversations, and those small moments that meant so much. I still remember the time we stayed up talking about silly things and laughed until our cheeks hurt. Those moments made everything feel light and easy, and I miss that a lot.</p>
+
+        <p>I've been trying to slow down and understand my feelings better. I realize now that moving too fast can complicate things, and I want to improve—not just for myself, but for anyone I care about.</p>
+
+        <p>I'm not writing this to rush anything again. I just wanted you to know that what we had meant something to me.</p>
+
+        <p>I know you're busy, and I understand. I also realize you may need space, and I respect that too.</p>
+
+        <p>I hope that someday, if the timing feels right, we can talk and laugh like we used to—without any rush or expectation. Just enjoying the moments as they come.</p>
+
+        <p>Even if things don’t go back to how they were, I'm grateful for the time we shared and the happiness it brought me. No pressure. Just a sincere note from me. </p>
+        
+        <div class="signature">— Ian</div>
+
+    </div>
+</div>
+
+<script>
+function openLetter() {
+    document.querySelector(".intro").style.opacity = "0";
+    setTimeout(() => {
+        document.querySelector(".intro").style.display = "none";
+        document.getElementById("letterContainer").style.display = "flex";
+        document.body.style.overflow = "auto";
+    }, 800);
+}
+</script>
+
+</body>
+</html>
