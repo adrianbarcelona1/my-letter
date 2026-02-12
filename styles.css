@@ -4,7 +4,7 @@ body {
     padding: 0;
     background: linear-gradient(to bottom right, #f4e1d2, #e8cfc1);
     font-family: 'Playfair Display', serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Intro Screen */
@@ -20,6 +20,7 @@ body {
     cursor: pointer;
     text-align: center;
     transition: opacity 0.8s ease;
+    padding: 20px;
 }
 
 .intro h1 {
@@ -49,12 +50,14 @@ body {
 .letter {
     background: #fffaf5;
     max-width: 750px;
-    padding: 60px;
+    width: 90%;
+    padding: 60px 30px;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     line-height: 1.9;
     color: #5a4a42;
     position: relative;
+    box-sizing: border-box;
 }
 
 /* Tulip Accent (corner decoration) */
@@ -98,5 +101,52 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .letter {
+        padding: 40px 20px;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    .signature {
+        font-size: 22px;
+    }
+
+    .letter::before {
+        font-size: 20px;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .letter {
+        padding: 30px 15px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 13px;
+    }
+
+    .signature {
+        font-size: 20px;
+    }
+
+    .letter::before {
+        font-size: 18px;
     }
 }
