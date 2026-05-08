@@ -64,7 +64,7 @@ body {
 
 /* Tulip Accent (corner decoration) */
 .letter::before {
-    content: "🌷";
+    content: "🌹";
     position: absolute;
     top: 20px;
     right: 25px;
